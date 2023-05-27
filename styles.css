@@ -4,12 +4,18 @@
 }
 
 body {
+  display: flex;
   margin: 0;
   box-sizing: border-box;
   height: 100vh;
   padding: 2rem;
+  line-height: 1.6rem;
 }
-
+h1,
+h2,
+p {
+  line-height: 2rem;
+}
 .container {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -37,6 +43,13 @@ body {
   grid-area: des;
   padding: 2rem;
   font-family: var(--text-font-family);
+  line-height: 1rem;
+}
+
+.bnt-box {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
 }
 .footer {
   display: flex;
