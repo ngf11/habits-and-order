@@ -1,0 +1,46 @@
+:root {
+  --text-font-family: "Roboto Mono", monospace;
+  --headers-font-family: "Rubik Mono One", sans-serif;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "title des des des"
+    "title des des des"
+    "title des des des"
+    "title des des des"
+    "title des des des"
+    "footer footer footer footer";
+}
+
+.titel {
+  grid-area: title;
+  text-align: justify;
+  font-family: var(--headers-font-family);
+  font-weight: 900;
+  font-size: 1rem;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: des;
+  padding: 2rem;
+  font-family: var(--text-font-family);
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: footer;
+}
