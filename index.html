@@ -45,8 +45,68 @@
           </p>
         </div>
         <div class="bnt-box">
-          <button class="sing-up bnt">Sing Up</button>
-          <button class="login bnt">Log in</button>
+          <button onclick="openSingup.showModal()" class="sing-up bnt">
+            Sing Up
+          </button>
+          <dialog id="openSingup">
+            <div>
+              <button onclick="openSingup.close()" id="close-singup">X</button>
+            </div>
+            <div class="singup-form">
+              <fieldset>
+                <legend>Sing Up</legend>
+                <div>
+                  <label for="fname">First name: </label>
+                  <input id="fname" name="fname" type="text" required />
+                </div>
+                <div>
+                  <label for="lname">Last name: </label>
+                  <input id="lname" name="lname" type="text" required />
+                </div>
+                <div>
+                  <label for="email"> Email address: </label>
+                  <input id="email" name="email" type="email" />
+                </div>
+                <div>
+                  <label for="password">password:</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    required
+                  />
+                </div>
+                <div><button id="singup-bnt" type="submit">Submit</button></div>
+              </fieldset>
+            </div>
+          </dialog>
+          <button onclick="openLogin.showModal()" class="login bnt">
+            Log in
+          </button>
+          <dialog id="openLogin">
+            <div>
+              <button onclick="openLogin.close()" id="close-login">X</button>
+            </div>
+            <div class="singup-form">
+              <fieldset>
+                <legend>Log In</legend>
+                <div>
+                  <label for="email"> Email address: </label>
+                  <input id="email2" name="email" type="email" />
+                </div>
+                <div>
+                  <label for="password">password:</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password2"
+                    required
+                  />
+                </div>
+                <div><button id="login-bnt" type="submit">Log In</button></div>
+              </fieldset>
+            </div>
+          </dialog>
         </div>
       </div>
       <div class="item footer">By nico. Copyright© ngf11</div>
