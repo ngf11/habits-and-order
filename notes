@@ -1,29 +1,4 @@
 - add header add button with dark mode
+- dailog css colors for dark mode
 
-- dialog for sing up/ and form
-- dialog for login/ and form
-
-<dialog id="openSingup">
-            <div>
-              <button onclick="openSingup.close()" id="close-singup">X</button>
-            </div>
-            <div class="singup-form">
-              <fieldset>
-                <legend>Log In</legend>
-                <div>
-                  <label for="email"> Email address: </label>
-                  <input id="email" name="email" type="email" />
-                </div>
-                <div>
-                  <label for="password">password:</label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    required
-                  />
-                </div>
-                <div><button id="singup-bnt" type="submit">Log In</button></div>
-              </fieldset>
-            </div>
-          </dialog>
+- plan out websit infrustucture--- text shane
