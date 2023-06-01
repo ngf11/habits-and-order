@@ -1,5 +1,6 @@
 - add header add button with dark mode
 - dailog css colors for dark mode
 - Add efects on buttons.
-- media query for size
+- media query for size "button changes color when viwed on mobile(iphone)"
+- size-minmax() clamp(minimum-size, ideal-size, maximum-size)
 - plan out websit infrustucture--- text shane
